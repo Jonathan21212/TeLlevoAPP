@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-item>
+    <ion-avatar style="margin-top: 16px; margin-right: 5px;">
+      <img src="assets/img/2.png" alt="">
+    </ion-avatar>
+    <ion-label style="margin-top: 30px;">
+      
+      <h2>  Bievenido, Hawaii</h2>
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true" >
+  
+  
+    <div>
+      <ion-list > 
+        <ion-list-header > Viajes Disponibles </ion-list-header>
+      </ion-list>
+  
+        <div >
+          <ion-item >
+            <ion-list>
+              
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="assets/img/2.png" />
+                </ion-avatar>
+                <ion-label>
+                  
+                  <h3>Lugares Disponibles: 2 </h3>
+                  <h3>Precio: $1.000</h3>
+                  <h3>destino: 45 Sta Rosa</h3>
+                  
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-item>
+          <ion-item large>
+            <ion-label>
+              <p style="text-align: center;" [routerLink]="['/detalle-viaje']">Ver detalles </p>
+            </ion-label>
+          </ion-item>
+        </div>
+        <div>
+          <ion-item >
+            <ion-list>
+              
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="assets/img/2.png" />
+                </ion-avatar>
+                <ion-label>
+                  
+                  <h3>Lugares Disponibles: 2 </h3>
+                  <h3>Precio: $1.000</h3>
+                  <h3>destino: 45 Sta Rosa</h3>
+                  
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-item>
+          <ion-item large>
+            <ion-label>
+              <p style="text-align: center;" [routerLink]="['/detalle-viaje']">Ver detalles </p>
+            </ion-label>
+          </ion-item>
+        </div>
+  
+        <div>
+          <ion-item >
+            <ion-list>
+              
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="assets/img/2.png" />
+                </ion-avatar>
+                <ion-label>
+                  
+                  <h3>Lugares Disponibles: 2 </h3>
+                  <h3>Precio: $1.000</h3>
+                  <h3>destino: 45 Sta Rosa</h3>
+                  
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-item>
+          <ion-item large>
+            <ion-label>
+              <p style="text-align: center;" [routerLink]="['/detalle-viaje']">Ver detalles </p>
+            </ion-label>
+          </ion-item>
+        </div>
+        
+   
+      </div>
+    
+      
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="speakers" [routerLink]="['/home']">
+          <ion-icon name="arrow-undo-circle-outline" [routerLink]="['/home']"></ion-icon>
+          <ion-label>Cerrar Sesion</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="schedule" [routerLink]="['/index-pasajero']">
+          <ion-icon name="map"  [routerLink]="['/index-pasajero']"></ion-icon>
+          <ion-label>Tomar Viaje</ion-label>
+          <ion-badge>3</ion-badge>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="speakers" [routerLink]="['/perfil']">
+          <ion-icon name="person-circle" [routerLink]="['/perfil']"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+        
+    
+        
+        
+      </ion-tab-bar>
+    </ion-tabs>
+ 
+  
+  
+</ion-content>
+
+

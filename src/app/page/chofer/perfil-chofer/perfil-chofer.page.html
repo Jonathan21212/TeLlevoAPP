@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-item>
+    <ion-avatar style="margin-top: 16px; margin-right: 5px;">
+      <img src="assets/img/2.png" alt="">
+    </ion-avatar>
+    <ion-label style="margin-top: 30px;">
+      
+      <h2>  Bievenido, Hawaii</h2>
+    </ion-label>
+  </ion-item>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>JuanPerez</ion-card-title>
+      <ion-card-subtitle>Ingenieria Informatica</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Nombre: Juan Martin Perez Rojas <br> Edad: 22 años <br> Sede: Puente Alto <br> Recaudado: $15.000
+      
+    </ion-card-content>
+    
+  </ion-card>
+  <h3 style="text-align: center;">Viajes Pendientes</h3>
+  <div>
+    <ion-item >
+      
+      <ion-list>
+        
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/img/2.png" />
+          </ion-avatar>
+          <ion-label>
+            
+            <h3>Pasajeros: 2 </h3>
+            <h3>Total: $1.000</h3>
+            <h3>destino: 45 Sta Rosa</h3>
+            
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-item>
+    <ion-item large>
+      <ion-label>
+        <p style="text-align: center;" [routerLink]="['/detalle-chofer']">Ver detalles </p>
+      </ion-label>
+    </ion-item>
+  </div>
+  <h4 style="text-align: center;">Pasajero Frecuente Semanal</h4>
+  <ion-label>
+    <p style="text-align: center;">Juan Perez, 6 Viajes Realizados</p>
+  </ion-label>
+
+  <ion-tabs >
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="speakers" [routerLink]="['/home']">
+        <ion-icon name="arrow-undo-circle-outline" [routerLink]="['/home']"></ion-icon>
+        <ion-label>Logout</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="schedule" [routerLink]="['/crear-viaje']">
+        <ion-icon name="add"  [routerLink]="['/crear-viaje']"></ion-icon>
+        <ion-label>Crear Viaje</ion-label>
+        
+      </ion-tab-button>
+  
+      <ion-tab-button tab="speakers" [routerLink]="['/perfil-chofer']">
+        <ion-icon name="person-circle" [routerLink]="['/perfil-chofer']"></ion-icon>
+        <ion-label>Perfil</ion-label>
+      </ion-tab-button>
+      
+      <ion-tab-button tab="speakers" [routerLink]="['/index-chofer']">
+        <ion-icon name="list" [routerLink]="['/index-chofer']"></ion-icon>
+        <ion-label>Historial</ion-label>
+      </ion-tab-button>
+      
+  
+      
+      
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

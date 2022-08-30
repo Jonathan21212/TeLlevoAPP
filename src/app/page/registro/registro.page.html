@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      
+    </ion-buttons>
+    <ion-title>TeLlevoAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h4 style="text-align: center;"> <b> Registro</b> </h4>
+  <div >
+    <p style="color: black; padding: 10px;"> <b>Usuario:</b> </p> 
+    <ion-input class="hh"></ion-input>
+    <p style="color: black; padding: 10px;"> <b>Ingrese su contraseña: </b> </p>
+    <ion-input class="hh"></ion-input>
+    <p style="color: black; padding: 10px;"> <b>re-Ingrese su contraseña:</b> </p> 
+    <ion-input class="hh"></ion-input>
+    <p style="color: black; padding: 10px;"> <b>Ingrese su correo: </b> </p>
+    <ion-input class="hh"></ion-input>
+    <p style="color: black; padding: 10px;"> <b>Carrera</b> </p> 
+    <ion-input class="hh"></ion-input>
+    <p style="color: black; padding: 10px;"> <b>Semestre: </b> </p>
+    <ion-input class="hh"></ion-input>
+    <p style="color: black; padding: 10px;"> <b>Edad: </b> </p> 
+    <ion-input class="hh"></ion-input>
+    <p style="color: black; padding: 10px;"> <b>Telefono: </b> </p>
+    <ion-input class="hh"></ion-input>
+    
+    
+    <ion-button class="j" style="margin-top: 20px; margin-left: 55px;" (click)="jajan()">Listo</ion-button>
+    <ion-button  slot="end" style="margin-top: 20px;" class="danger" [routerLink]="['/home']">Cancelar </ion-button>
+  </div>
+</ion-content>

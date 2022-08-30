@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      
+    </ion-buttons>
+    <ion-title>Mapa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="assets/img/mapa6.jpeg" width="400px" >
+  
+  <div>
+    <ion-tabs >
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="speakers" [routerLink]="['/home']">
+          <ion-icon name="arrow-undo-circle-outline" [routerLink]="['/home']"></ion-icon>
+          <ion-label>Logout</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button tab="schedule" [routerLink]="['/crear-viaje']">
+          <ion-icon name="add"  [routerLink]="['/crear-viaje']"></ion-icon>
+          <ion-label>Crear Viaje</ion-label>
+          
+        </ion-tab-button>
+    
+        <ion-tab-button tab="speakers" [routerLink]="['/perfil-chofer']">
+          <ion-icon name="person-circle" [routerLink]="['/perfil-chofer']"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+        
+        <ion-tab-button tab="speakers" [routerLink]="['/index-chofer']">
+          <ion-icon name="list" [routerLink]="['/index-chofer']"></ion-icon>
+          <ion-label>Historial</ion-label>
+        </ion-tab-button>
+        
+    
+        
+        
+      </ion-tab-bar>
+    </ion-tabs>
+  </div>
+</ion-content>

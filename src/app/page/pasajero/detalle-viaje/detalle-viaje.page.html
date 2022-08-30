@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-item>
+    <ion-avatar style="margin-top: 16px; margin-right: 5px;">
+      <img src="assets/img/2.png" alt="">
+    </ion-avatar>
+    <ion-label style="margin-top: 30px;">
+      
+      <h2>  Bievenido, Hawaii</h2>
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+    <img src="assets/img/4.png" alt="">
+    <ion-card-header>
+      <ion-card-subtitle style="font-size: 11px;">Origen: DuocUC Sede Puente Alto</ion-card-subtitle>
+      <ion-card-title style="font-size: 15px;">Destino: 45 Sta Rosa</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="font-size: 12px;">
+      Nombre Conductor: Mario Gonzalez <br> Telefono: +56984295712 <br> Carrera: Tec. Construccion <br>
+      Hora Salida: 8:30 am <br> Lugar Encuentro: Puerta Principal <br> Estado: 2 Libres
+      
+      
+    </ion-card-content>
+
+    
+  </ion-card>
+  <ion-item >
+    <ion-button slot="end" fill="outline" style="font-size: 14px;" (click)="presentAlert()">Tomar Viaje</ion-button>
+    <ion-button slot="end" fill="outline" style="font-size: 14px;"  [routerLink]="['/index-pasajero']">Volver</ion-button>
+  </ion-item>
+  
+  
+  <p style="text-align: center;">{{ handlerMessage }}</p>
+  
+  <div>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="speakers" [routerLink]="['/home']">
+          <ion-icon name="arrow-undo-circle-outline" [routerLink]="['/home']"></ion-icon>
+          <ion-label>Cerrar Sesion</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button tab="schedule" [routerLink]="['/index-pasajero']">
+          <ion-icon name="map"  [routerLink]="['/index-pasajero']"></ion-icon>
+          <ion-label>Tomar Viaje</ion-label>
+          <ion-badge>3</ion-badge>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="speakers" [routerLink]="['/perfil']">
+          <ion-icon name="person-circle" [routerLink]="['/perfil']"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+        
+    
+        
+        
+      </ion-tab-bar>
+    </ion-tabs>
+  </div>
+</ion-content>
+
+

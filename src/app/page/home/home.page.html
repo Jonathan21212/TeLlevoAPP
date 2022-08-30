@@ -1,0 +1,31 @@
+
+
+<ion-content [fullscreen]="true" class="x" >
+  
+  <div id="container"class="y" >
+    
+    <p style="color: black; margin-top: 10%;"> <b>Usuario:</b> </p> 
+    <ion-input></ion-input>
+    <p style="color: black;"> <b>Contraseña:</b> </p>
+    <ion-input type="password" ></ion-input>
+    <div class="justify-content-between">
+  
+    <ion-button [routerLink]="['/perfil-chofer']"
+    color="warning" style="font-size: 13px; ">Chofer
+    </ion-button>
+    <ion-button [routerLink]="['/perfil']"
+     color="warning" style="font-size: 13px;">Pasajero
+    </ion-button>
+    <ion-button [routerLink]="['/recuperar']"
+     color="warning" style="font-size: 13px;">Recuperar
+    </ion-button>
+    
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-label [routerLink]="['/registro']">
+    <h5 style="color: aqua;  text-align: center;">¿No posees cuenta? Haz click aqui para registrarte</h5>
+  </ion-label>
+</ion-footer>

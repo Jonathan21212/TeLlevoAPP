@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-item>
+    <ion-avatar style="margin-top: 16px; margin-right: 5px;">
+      <img src="assets/img/2.png" alt="">
+    </ion-avatar>
+    <ion-label style="margin-top: 30px;">
+      
+      <h2>  Bievenido, Hawaii</h2>
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  
+  
+    <ion-card>
+      <img src="assets/img/4.png" alt="">
+      <ion-card-header>
+        <ion-card-subtitle style="font-size: 11px;">Origen: DuocUC Sede Puente Alto</ion-card-subtitle>
+        <ion-card-title style="font-size: 13px;">Destino: 45 Sta Rosa</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="font-size: 11px;">
+        n° Pasajeros: 2<br>
+        Hora Salida: 23:56 <br> 
+        Lugar Encuentro: Puerta Principal <br>
+        <h4> <b> Info Pasajeros</b></h4> 
+        
+        Esteban Sanchez, Tec. Construccion <br>
+        +56911111111 <br>
+        Destino: psj Colombia<br>
+        Gonzalo Abarca, Tec. Administracion <br>
+        +56911111111 <br>
+        Destino: psj Av Eyzaguirre<br>
+        
+
+      </ion-card-content>
+    </ion-card>
+    
+  
+  <ion-item >
+    <ion-button slot="end" fill="outline" style="font-size: 14px;"  [routerLink]="['/mapa']">Iniciar</ion-button>
+    <ion-button slot="end" fill="outline" style="font-size: 14px;"  [routerLink]="['/chat']">Chat</ion-button> 
+    <ion-button slot="end" fill="outline" style="font-size: 14px;"  [routerLink]="['/perfil-chofer']">Volver</ion-button>
+  </ion-item>
+  
+  
+  <div>
+    <ion-tabs >
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="speakers" [routerLink]="['/home']">
+          <ion-icon name="arrow-undo-circle-outline" [routerLink]="['/home']"></ion-icon>
+          <ion-label>Logout</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button tab="schedule" [routerLink]="['/crear-viaje']">
+          <ion-icon name="add"  [routerLink]="['/crear-viaje']"></ion-icon>
+          <ion-label>Crear Viaje</ion-label>
+          
+        </ion-tab-button>
+    
+        <ion-tab-button tab="speakers" [routerLink]="['/perfil-chofer']">
+          <ion-icon name="person-circle" [routerLink]="['/perfil-chofer']"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+        
+        <ion-tab-button tab="speakers" [routerLink]="['/index-chofer']">
+          <ion-icon name="list" [routerLink]="['/index-chofer']"></ion-icon>
+          <ion-label>Historial</ion-label>
+        </ion-tab-button>
+        
+    
+        
+        
+      </ion-tab-bar>
+    </ion-tabs>
+  </div>
+</ion-content>
+
+

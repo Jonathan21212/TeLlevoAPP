@@ -1,0 +1,36 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      
+    </ion-buttons>
+    <ion-title>TeLlevoAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+
+  
+ 
+
+  <div >
+  <p style="color: black; padding: 10px;"> <b>Origen:</b> </p> 
+  <ion-input class="crearViaje"></ion-input>
+  <p style="color: black; padding: 10px;"> <b>Destino: </b> </p>
+  <ion-input class="crearViaje"></ion-input>
+  <p style="color: black; padding: 10px;"> <b>Hora Salida:  </b> </p>
+  <ion-input class="crearViaje" ></ion-input>
+  <p style="color: black; padding: 10px;"> <b>Destino: </b> </p>
+  <ion-input class="crearViaje" ></ion-input>
+  <p style="color: black; padding: 10px;"> <b>Precio: </b> </p>
+  <ion-input class="crearViaje" ></ion-input>
+  <p style="color: black; padding: 10px;"> <b>Capacidad:  </b> </p>
+  <ion-input class="crearViaje" ></ion-input>
+  
+  <ion-button slot="start" class="j" (click)="presentAlert()">Agregar Viaje</ion-button>
+  <ion-button  slot="end" class="danger" [routerLink]="['/perfil-chofer']">Cancelar </ion-button>
+</div>
+<p style="text-align: center;">{{ handlerMessage }}</p>
+</ion-content>

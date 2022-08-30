@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar class="nav">
+    <ion-buttons slot='start'>
+      <ion-back-button  ></ion-back-button>
+   </ion-buttons>
+   <ion-title color="white" class="light">Pago</ion-title>
+   </ion-toolbar>
+   
+</ion-header>
+   <ion-content>
+   <div class="main_content_div">
+    
+   
+   <ion-label class="text"> Ingrese los datos de su cuenta </ion-label>
+   <ion-label class="texttt">Nombre del Titular:</ion-label>
+    <ion-input type="text" style="color: black;" placeholder="Juanito Perez Perez"></ion-input>
+    <ion-label class="texttt">Numero de la tarjeta:</ion-label>
+    <ion-input type="text" style="color: black;" placeholder="XXXX-XXXX-XXXX-1212"></ion-input>
+    <ion-label class="texttt">Ingrese sus coordenadas:</ion-label>
+    <ion-row style="margin-top:2px;">
+     
+      <ion-col size="4">
+        <div>
+          <ion-label class="textt">H3:</ion-label>
+          <ion-input type="text" style="color: black;" placeholder=""></ion-input>
+       </div>
+     </ion-col>
+     <ion-col size="4">
+      <div>
+        <ion-label class="textt">A1:</ion-label>
+        <ion-input type="text" style="color: black;" placeholder=""></ion-input>
+     </div>
+   </ion-col>
+   <ion-col size="4">
+    <div>
+      <ion-label class="textt">B3</ion-label>
+      <ion-input type="text" style="color: black;" placeholder=""></ion-input>
+   </div>
+  </ion-col>
+   </ion-row>
+   <ion-label class="text"> Monto total a pagar: $1.000 </ion-label>
+   <ion-button expand="block" fill="clear" shape="round" (click)="alerta1()" >Pagar</ion-button>
+   </div>
+</ion-content>
+   
+
+
+
+
